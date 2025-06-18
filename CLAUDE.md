@@ -1,11 +1,11 @@
 - When you install or run Python packages, you must ALWAYS consider that ALL Python code must work under a virtual environment controlled by the UV tool. So, you must always prefix any Python code you run with the source .venv/bin/activate command, while you must always use the 'UV add' command to install any Python packages.
 - When I ask you to locate code, I need to give me the folder, the file name, the class, and the line number together with the code extract.
 - Don't perform any version control operation unless I explicitly request it.
-- Be aware that the Postgres database is running in a docker. So, when you want to run PostgreSQL commands, you must run them in Docker.
+- Be aware that any Postgres database is running in a docker. So, when you want to run PostgreSQL commands, you must run them in Docker.
 - Every time you want to create a test script, you must create it in the test_scripts folder. If the folder doesn't exist, you must make it.
 - You must maintain a document at the root level of the project, named "Issues - Pending Items.md," where you must register any issue, pending item, inconsistency, or discrepancy you detect. Every time you fix a defect or an issue, you must check this file to see if there is an item to remove.
-- Never use SQLAlchemy to access databases in Python projects. If an ORM library is needed prefer the pydapper.
 - The "Issues - Pending Items.md" content must be organized with the pending items on top and the completed items after. From the pending items the most critical and important must be first followed by the rest.
+- Never use SQLAlchemy to access databases in Python projects. If an ORM library is needed prefer the pydapper.
 - When you design databases you must align with the following table naming conventions:
   - Table names must be singular e.g. the table that keeps customers' data must be called "Customer"
   - Tables that are used to express references from one entity to another can by plural if the first entity is linked to many other entities. 
