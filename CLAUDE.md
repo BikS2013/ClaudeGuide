@@ -25,3 +25,4 @@
     - Understanding the working context
 - Regarding the CORS implementation in APIs you must following always the guidelines from the CORS-CONFIGURATION.md file in BikS2013/ClaudeGuide github repo
 - Regarding the configuration variables in REACT UI projects you must following always the guidelines from the dynamic-config.md file in BikS2013/ClaudeGuide github repo
+- The file configuration-repo.md in the BikS2013/ClaudeGuide GitHub repository describes a generic approach to using a GitHub repository as the configuration storage and management environment for an application. Each time you need to get information regarding the configuration-repo pattern, you must read this file. 
