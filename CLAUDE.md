@@ -25,4 +25,4 @@
     - Understanding the working context
 - Regarding the **CORS** implementation in APIs you must following always the guidelines from the **CORS-CONFIGURATION.md** file in BikS2013/ClaudeGuide github repo
 - The file **configuration-service-pattern.md** in the BikS2013/ClaudeGuide GitHub repository describes how the **configuration-repo** pattern implementation can be used to implement resources retrieval from the configuration repository in a standardized and efficient way. Each time you need to get information regarding the **configuration-service-pattern**, you must read this file.
-- The configuration management in Node based apps must be implemented according to the instructions in the https://github.com/BikS2013/configuration-management/blob/main/config-manager/USAGE.md file under the BikS2013/configuration-management project. 
+- The configuration management in Node based apps must be implemented according to the instructions in the [Usage](https://github.com/BikS2013/configuration-management/blob/main/config-manager/USAGE.md) file under the [BikS2013/configuration-management](https://github.com/BikS2013/configuration-management) project. 
