@@ -7,6 +7,8 @@ I want you to start creating the complete configuration layer including:
 - the config.json endpoint at client.
 - the configuration repository, and database cache patterns as refered in instructions.
 
+**Very Important** You must use the packages @biks2013/github-asset-client, @biks2013/asset-database and @biks2013/config-service. I want you to rely to the implementations done in these packages, and avoid to reimplement anything alread implemented. 
+
 **Very Important** The use of any kind of default values is strictly prohibited .
 
 The assets owner name must be "github-monitor" and the assets owner class must be "monitoring-app".
