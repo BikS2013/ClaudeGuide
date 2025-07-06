@@ -39,3 +39,15 @@ In cases of assets retrieved from the registry, the preffered approach is the ap
 after the resource has beed retrieved to avoid to retrieve it again and again.
 It is also recomended to implement a dedicated request to refresh from the resiistry an asset when needed.
 This asset-refresh endpoint must be generic and get as parameter the assey_key.
+
+I want you aleo to add a test at the backend service startup to examine the existence and validity of the required environment variables.
+In case any of these variables is missing I want you to inform the user accordingly and shutdown the service gracefully.
+
+I want you also to add hotkeys to the backend server to support the following actions: 
+c - to clear the console 
+v - to toggle verbose console's reporting
+f - to toggle console's freeze 
+h - to display help messages 
+
+I want you also to make the server report at the start time the available endpoints and both urls: the one used for operations and the one used by the swagger.
+
