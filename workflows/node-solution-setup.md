@@ -53,5 +53,7 @@ v - to toggle verbose console's reporting
 f - to toggle console's freeze 
 h - to display help messages 
 
+I don't want you to use any prefix other than api in the endpoints (e.g. /v1/ is prohibited) 
+
 I want you also to make the server report at the start time the available endpoints and both urls: the one used for operations and the one used by the swagger.
 
