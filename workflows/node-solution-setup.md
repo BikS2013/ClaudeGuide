@@ -34,6 +34,8 @@ CORS_MAX_AGE=86400
 
 ```
 
+I want you to take care to allow the CORS_ORIGIN to accept more than one URLs.
+
 I don't want you to implement any kind of external caching (like REDIS or similars).
 In cases of assets retrieved from the registry, the preffered approach is the application to keep the resources in local memory variables 
 after the resource has beed retrieved to avoid to retrieve it again and again.
