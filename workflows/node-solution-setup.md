@@ -9,7 +9,7 @@ I want you to start creating the complete configuration layer including:
 
 **Very Important** You must use the packages @biks2013/github-asset-client, @biks2013/asset-database and @biks2013/config-service. I want you to rely to the implementations done in these packages, and avoid to reimplement anything alread implemented. 
 
-**Very Important** The use of any kind of default values is strictly prohibited .
+**Very Important** The use of any kind of default values is strictly prohibited. You must never use any hardcoded or default value.
 
 The assets owner name must be "github-monitor" and the assets owner class must be "monitoring-app".
 You sould use the following .env variables to support the configuration implementation 
@@ -35,16 +35,15 @@ CORS_CREDENTIALS=true
 CORS_MAX_AGE=86400
 
 ```
-
 I want you to take care to allow the CORS_ORIGIN to accept more than one URLs.
 
 I don't want you to implement any kind of external caching (like REDIS or similars).
 In cases of assets retrieved from the registry, the preffered approach is the application to keep the resources in local memory variables 
 after the resource has beed retrieved to avoid to retrieve it again and again.
-It is also recomended to implement a dedicated request to refresh from the resiistry an asset when needed.
+It is also recomended to implement a dedicated request to refresh from the registry an asset when needed.
 This asset-refresh endpoint must be generic and get as parameter the assey_key.
 
-I want you aleo to add a test at the backend service startup to examine the existence and validity of the required environment variables.
+I want you also to add a test at the backend service startup to examine the existence and validity of the required environment variables.
 In case any of these variables is missing I want you to inform the user accordingly and shutdown the service gracefully.
 
 I want you also to add hotkeys to the backend server to support the following actions: 
@@ -53,7 +52,10 @@ v - to toggle verbose console's reporting
 f - to toggle console's freeze 
 h - to display help messages 
 
-I don't want you to use any prefix other than api in the endpoints (e.g. /v1/ is prohibited) 
+I don't want you to use any prefix other than api in the endpoints (e.g. prefixes like /v1/ are prohibited). 
+I want you during the startup time to retrieve the env settings stored in the file inicated by the ENV_SETTINGS_ASSET_KEY, and merge them with the env settingsa loaded from the local .env file.
+I want the combined set of environment settings to be available through a dedicated API endpoint.
 
+I want you to implement a swagger rendering capability as standard feature of the API. 
 I want you also to make the server report at the start time the available endpoints and both urls: the one used for operations and the one used by the swagger.
 
