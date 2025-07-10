@@ -25,8 +25,9 @@
     - Platform-specific decisions
     - Understanding the working context
 - Regarding the **CORS** implementation in APIs you must following always the guidelines from the **CORS-CONFIGURATION.md** file in BikS2013/ClaudeGuide github repo
-- The configuration management for the Node based apps must be always implemented according to the instructions in the following documents
+- The configuration management for the Node based apps must be always implemented according to the instructions in the following documents from the [BikS2013/configuration-management](https://github.com/BikS2013/configuration-management) project: 
   - start with the [CONFIGURATION-SIMPLE-GUIDE.md](https://github.com/BikS2013/configuration-management/blob/main/e2eTest/CONFIGURATION-SIMPLE-GUIDE.md) to understand the concept
   - follow the [Usage.md](https://github.com/BikS2013/configuration-management/blob/main/config-manager/USAGE.md) for installation and basic setup
   - use the [CONFIGURATION-SERVICE-PATTERN.md](https://github.com/BikS2013/configuration-management/blob/main/config-manager/CONFIGURATION-SERVICE-PATTERN.md) as reference for advanced features, troubleshooting, and architectural details
-  from the [BikS2013/configuration-management](https://github.com/BikS2013/configuration-management) project. 
+
+
